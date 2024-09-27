@@ -1,0 +1,299 @@
+$font-text: "Raleway", sans-serif;
+$color-title: rgb(100, 19, 100);
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $color-title;
+}
+
+@mixin titulos {
+    color: $color-title;
+    margin: 10px;
+    text-align: center;
+    $font-text: "Raleway", sans-serif;
+}
+
+@mixin button {
+    background-color: rgb(70, 130, 180);
+    border: none;
+    font-family: $font-text;
+    font-weight: bold;
+    color: $color-title;
+}
+
+@mixin laterais {
+    height: 57vh;
+    width: 30vw;
+    position: absolute;
+    top: 830px;
+}
+
+@mixin cards {
+    height: 200px;
+    width: 400px;
+    border: solid $color-title 6px;
+    border-radius: 6%;
+
+}
+
+@mixin avaliações {
+    height: 290px;
+    width: 220px;
+    background-color: rgb(196, 133, 196, 0.8);
+    border-radius: 7%;
+    @include flexbox();
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(196, 133, 196);
+    @include flexbox();
+    color: $color-title;
+    position: fixed;
+    z-index: 1;
+
+    .logo {
+        font-family: "Matemasie", system-ui;
+        height: 5vh;
+        width: 15vw;
+        font-size: 20px;
+        border-radius: 95%;
+        background-color: rgb(70, 130, 180);
+        color: rgb(127, 24, 127);
+        @include flexbox();
+        justify-content: center;
+        align-items: self-end;
+    }
+
+    nav {
+        height: 10vh;
+        width: 28vw;
+        @include flexbox();
+        justify-content: space-between;
+
+        a {
+            font-family: $font-text;
+            @include link();
+        }
+
+    }
+
+    button {
+        height: 5vh;
+        width: 9vw;
+        border-radius: 15%;
+        @include button();
+        @include link();
+    }
+}
+
+.i1 {
+    height: 70vh;
+    width: 100%;
+    margin-top: 73px;
+}
+
+.vindas {
+    background-color: rgb(196, 133, 196);
+    font-family: $font-text;
+    color: $color-title;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    @include flexbox();
+}
+
+.inicio {
+    height: 75vh;
+    width: 100%;
+    @include flexbox();
+    margin-bottom: 60px;
+    margin-top: 100px;
+
+    .cidade {
+        width: 40vw;
+        height: 30vh;
+
+        h2 {
+            font-size: 50px;
+            @include titulos();
+            margin-top: 10px;
+
+        }
+
+        h3 {
+            font-size: 17px;
+            @include titulos();
+            margin-top: 15px;
+        }
+
+        select {
+            font-size: 18px;
+            height: 50px;
+            width: 290px;
+            border-radius: 5%;
+            @include button();
+            text-align: center;
+            margin: 30px 0px 0 155px;
+
+        }
+    }
+}
+
+.esquerda {
+    height: 50vh;
+    width: 20vw;
+
+    .i2 {
+        @include laterais();
+        left: -17px;
+        transform: rotate(90deg);
+    }
+}
+
+.direita {
+    height: 50vh;
+    width: 20vw;
+
+    .i3 {
+        @include laterais();
+        right: -12px;
+        transform: rotate(270deg);
+    }
+}
+
+.cards {
+    height: 220px;
+    width: 80%;
+    // border: solid sandybrown;
+    margin: 60px 160px;
+    @include flexbox();
+
+
+    .tosa {
+        @include cards();
+    }
+}
+
+.avaliações {
+    height: 330px;
+    width: 100%;
+    margin: 140px 0px 80px 0px;
+    @include flexbox();
+    background-color: rgb(70, 130, 180, 0.2);
+
+    .av {
+        @include avaliações();
+    }
+
+    img {
+        height: 60px;
+        width: 100px;
+        margin-top: 10%;
+    }
+}
+
+.serviços {
+    height: 230vh;
+    width: 100%;
+    @include flexbox();
+    flex-direction: column;
+
+    a {
+        font-family: $font-text;
+        @include link();
+        text-align: center;
+    }
+
+    img {
+        height: 32vh;
+        width: 25vw;
+        border: solid $color-title 4px;
+        border-radius: 6%;
+    }
+
+    .serv {
+        height: 32vh;
+        width: 55vw;
+        @include flexbox();
+        flex-direction: row;
+
+
+        .dir {
+            height: 20vh;
+            width: 15vw;
+            @include flexbox();
+            flex-direction: column;
+
+        }
+
+        .esq {
+            height: 20vh;
+            width: 15vw;
+            @include flexbox();
+            flex-direction: column;
+        }
+    }
+}
+
+footer {
+    height: 10vw;
+    width: 100%;
+    @include flexbox();
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:  rgb(196, 133, 196, 0.8);
+
+    .sociais {
+        height: 25vh;
+        width: 15vw;
+        @include flexbox();
+
+        img{
+            width: auto;
+            height: 6vh;
+            border-radius: 60%;
+        }
+    }
+
+    .rodape{
+        height: 18vh;
+        width: 95vw;
+        @include flexbox();
+        justify-content: space-between;
+
+        div{
+            @include flexbox();
+            width: 35vw;
+        }
+
+        .cnpj{
+            flex-direction: column;
+            height: 7vh;
+        }
+
+        a{
+            @include link();
+        }
+    }
+
+}

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(196, 133, 196);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(100, 19, 100);
+  position: fixed;
+  z-index: 1;
+}
+header .logo {
+  font-family: "Matemasie", system-ui;
+  height: 5vh;
+  width: 15vw;
+  font-size: 20px;
+  border-radius: 95%;
+  background-color: rgb(70, 130, 180);
+  color: rgb(127, 24, 127);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  align-items: self-end;
+}
+header nav {
+  height: 10vh;
+  width: 28vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: rgb(100, 19, 100);
+}
+header button {
+  height: 5vh;
+  width: 9vw;
+  border-radius: 15%;
+  background-color: rgb(70, 130, 180);
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgb(100, 19, 100);
+  text-decoration: none;
+  color: rgb(100, 19, 100);
+}
+
+.i1 {
+  height: 70vh;
+  width: 100%;
+  margin-top: 73px;
+}
+
+.vindas {
+  background-color: rgb(196, 133, 196);
+  font-family: "Raleway", sans-serif;
+  color: rgb(100, 19, 100);
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inicio {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+.inicio .cidade {
+  width: 40vw;
+  height: 30vh;
+}
+.inicio .cidade h2 {
+  font-size: 50px;
+  color: rgb(100, 19, 100);
+  margin: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.inicio .cidade h3 {
+  font-size: 17px;
+  color: rgb(100, 19, 100);
+  margin: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+.inicio .cidade select {
+  font-size: 18px;
+  height: 50px;
+  width: 290px;
+  border-radius: 5%;
+  background-color: rgb(70, 130, 180);
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgb(100, 19, 100);
+  text-align: center;
+  margin: 30px 0px 0 155px;
+}
+
+.esquerda {
+  height: 50vh;
+  width: 20vw;
+}
+.esquerda .i2 {
+  height: 57vh;
+  width: 30vw;
+  position: absolute;
+  top: 830px;
+  left: -17px;
+  transform: rotate(90deg);
+}
+
+.direita {
+  height: 50vh;
+  width: 20vw;
+}
+.direita .i3 {
+  height: 57vh;
+  width: 30vw;
+  position: absolute;
+  top: 830px;
+  right: -12px;
+  transform: rotate(270deg);
+}
+
+.cards {
+  height: 220px;
+  width: 80%;
+  margin: 60px 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards .tosa {
+  height: 200px;
+  width: 400px;
+  border: solid rgb(100, 19, 100) 6px;
+  border-radius: 6%;
+}
+
+.avaliações {
+  height: 330px;
+  width: 100%;
+  margin: 140px 0px 80px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(70, 130, 180, 0.2);
+}
+.avaliações .av {
+  height: 290px;
+  width: 220px;
+  background-color: rgba(196, 133, 196, 0.8);
+  border-radius: 7%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.avaliações img {
+  height: 60px;
+  width: 100px;
+  margin-top: 10%;
+}
+
+.serviços {
+  height: 230vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.serviços a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: rgb(100, 19, 100);
+  text-align: center;
+}
+.serviços img {
+  height: 32vh;
+  width: 25vw;
+  border: solid rgb(100, 19, 100) 4px;
+  border-radius: 6%;
+}
+.serviços .serv {
+  height: 32vh;
+  width: 55vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.serviços .serv .dir {
+  height: 20vh;
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.serviços .serv .esq {
+  height: 20vh;
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  height: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(196, 133, 196, 0.8);
+}
+footer .sociais {
+  height: 25vh;
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .sociais img {
+  width: auto;
+  height: 6vh;
+  border-radius: 60%;
+}
+footer .rodape {
+  height: 18vh;
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .rodape div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35vw;
+}
+footer .rodape .cnpj {
+  flex-direction: column;
+  height: 7vh;
+}
+footer .rodape a {
+  text-decoration: none;
+  color: rgb(100, 19, 100);
+}/*# sourceMappingURL=style.css.map */
