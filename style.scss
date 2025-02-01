@@ -36,7 +36,7 @@ $color-title: rgb(100, 19, 100);
 
 @mixin cards {
     height: 200px;
-    width: 400px;
+    width: 395px;
     border: solid $color-title 6px;
     border-radius: 6%;
 
@@ -184,7 +184,6 @@ header {
 .cards {
     height: 220px;
     width: 80%;
-    // border: solid sandybrown;
     margin: 60px 160px;
     @include flexbox();
 
@@ -256,24 +255,12 @@ header {
 }
 
 footer {
-    height: 10vw;
+    height: 9vw;
     width: 100%;
     @include flexbox();
     flex-direction: column;
     justify-content: space-around;
-    background-color:  rgb(196, 133, 196, 0.8);
-
-    .sociais {
-        height: 25vh;
-        width: 15vw;
-        @include flexbox();
-
-        img{
-            width: auto;
-            height: 6vh;
-            border-radius: 60%;
-        }
-    }
+    background-color:  rgb(196, 133, 196, 0.8);    
 
     .rodape{
         height: 18vh;
@@ -284,6 +271,18 @@ footer {
         div{
             @include flexbox();
             width: 35vw;
+        }
+
+        .sociais {
+            height: 15vh;
+            width: 19vw;
+            @include flexbox();
+    
+            span{
+                text-decoration: none;
+                color: $color-title;
+                font-size: 30px;
+            }
         }
 
         .cnpj{
